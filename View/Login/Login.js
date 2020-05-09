@@ -1,0 +1,29 @@
+$(document).ready(function(){
+	$('.navbar-nav').append('<li class="nav-item"><a href="#" class="nav-link" id="Login">Login</a></li>');
+	$('.navbar-nav').append('<li class="nav-item"><a href="#" class="nav-link" id="Register">Register</a></li>');	
+	$('#Login').click(function(){
+		$('#ForgetPopup').hide();
+		$('#RegisterPopup').hide();
+		$('#LoginPopup').show();
+	});
+	$('#SingUp').click(function(){
+		$('#ForgetPopup').hide();
+		$('#LoginPopup').hide();
+		$('#RegisterPopup').show();
+	});
+	$('.close').click(function(){
+		$('#RegisterPopup').hide();
+		$('#LoginPopup').hide();
+		$('#ForgetPopup').hide();
+	});
+	$('#Register').click(function(){
+		$('#ForgetPopup').hide();
+		$('#RegisterPopup').show();
+		$('#LoginPopup').hide();
+	});
+	$('#Forget').click(function(){
+		$('#RegisterPopup').hide();
+		$('#LoginPopup').hide();
+		$('#ForgetPopup').show();
+	});
+});
